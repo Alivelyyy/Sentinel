@@ -4,7 +4,7 @@ const {
     MessageButton,
     MessageActionRow
 } = require('discord.js')
-const { Satxler } = require('../../structures/ReXx')
+const { Satxler } = require('../../structures/Sentinel')
 module.exports = {
     name: 'whitelist',
     aliases: ['wl'],
