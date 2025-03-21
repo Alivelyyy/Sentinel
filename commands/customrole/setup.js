@@ -412,7 +412,7 @@ module.exports = {
                         text: `Requested By ${message.author.tag}`,
                         iconURL: `${message.author.displayAvatarURL({ dynamic: true })}`
                     })
-                return ReXx(embed, client, message)
+                return Sentinel(embed, client, message)
             }
         } else if (input == 'reset') {
             const data = await client.db?.get(`customrole_${message.guild.id}`)
@@ -684,7 +684,7 @@ module.exports = {
         }
     }
 }
-async function ReXx(embed, client, message) {
+async function Sentinel(embed, client, message) {
     let embeds = [],
         page = 0,
         i,
