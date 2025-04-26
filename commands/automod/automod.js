@@ -69,7 +69,7 @@ module.exports = {
 
         const option = args[0]
 
-        const rex = new MessageEmbed()
+        const sentinel = new MessageEmbed()
             .setColor(client.color)
             .setAuthor({
                 name: message.author.tag,
@@ -133,7 +133,7 @@ module.exports = {
 
         switch (option) {
             case undefined:
-                return message.channel.send({ embeds: [rex] })
+                return message.channel.send({ embeds: [sentinel] })
                 break
             case 'bypass':
                 if (!args[1]) {

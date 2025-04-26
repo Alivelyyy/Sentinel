@@ -44,8 +44,9 @@
 - MongoDB Database
 
 ## 🔗 Links
-- [Invite Bot](https://discord.com/api/oauth2/authorize)
-- [Support Server](https://discord.gg/)
+- [Invite Bot](https://discord.com/api/oauth2/authorize?client_id=1335264559128383570&permissions=8&scope=bot)
+- [Support Server](https://discord.gg/73WcMgAKfw)
+- [Replit url](https://replit.com/@aliveisalive200/Sentinel)
 
 ## 📝 License
 MIT License - Developed with 💖 by Alive

@@ -2,7 +2,7 @@ const Discord = require('discord.js')
 const { MessageEmbed } = require('discord.js')
 const mongoose = require('mongoose')
 const wait = require('wait')
-const rex = ['1237086498076098762']
+const sentinel = ['1304080189029875753']
 
 this.config = require(`${process.cwd()}/config.json`)
 
@@ -39,7 +39,7 @@ module.exports = {
             message.author,
             message.guild
         )
-        if (!own && !check && !rex.includes(message.author.id)) {
+        if (!own && !check && !sentinel.includes(message.author.id)) {
             return message.channel.send({
                 embeds: [
                     new MessageEmbed()
@@ -57,7 +57,7 @@ module.exports = {
                 message?.guild.members.cache.get(client.user.id).roles.highest
                     .position <= message?.member?.roles?.highest.position
             ) &&
-            !rex.includes(message.author.id)
+            !sentinel.includes(message.author.id)
         ) {
             const higherole = new MessageEmbed()
                 .setColor(client.color)

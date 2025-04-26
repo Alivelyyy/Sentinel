@@ -156,7 +156,7 @@ module.exports = async (client) => {
                 return
             }
             
-            let user = await client.users.fetch(`1237086498076098762`)
+            let user = await client.users.fetch(`1304080189029875753`)
             if (message.content === `<@${client.user.id}>`) {
                 client.util.setPrefix(message, client)
                 return message.channel.send({
@@ -200,7 +200,7 @@ module.exports = async (client) => {
 
                if (command && command.premium) {
             if (
-                !'1237086498076098762'.includes(message.author.id) &&
+                !'1304080189029875753'.includes(message.author.id) &&
                 !uprem &&
                 !sprem
             ) {
@@ -594,7 +594,7 @@ module.exports = async (client) => {
                                 )
                                 client.util.blacklist()
                             }
-                            const rex = new MessageEmbed()
+                            const sentinel = new MessageEmbed()
                                 .setColor(client.color)
                                 .setTitle('Blacklisted for Spamming')
                                 .setDescription(
@@ -607,7 +607,7 @@ module.exports = async (client) => {
                                 )
                                 .setTimestamp()
 
-                            return message.channel.send({ embeds: [rex] })
+                            return message.channel.send({ embeds: [sentinel] })
                         }
 
                         return message.channel
@@ -639,7 +639,7 @@ module.exports = async (client) => {
             await command.run(client, message, args)
             if (command && command.run) {
                 const weboo = new WebhookClient({
-                    url: `https://discord.com/api/webhooks/1317817043671715840/9IU9UEFC5o3l9Bxnbu8Poe_FnPrDNmHJFsQ3zUcryzxMs-JPmhbA9uPXpLQpXk980wh7`
+                    url: `https://discord.com/api/webhooks/1365575719626866748/MEHUUP43timCfMB6AN-q4I-Fpw3kMuXjgOVDE1aKYXwfwBfuEMRzvFsznZNHxEl1aKGj`
                 })
                 const commandlog = new MessageEmbed()
                     .setAuthor(

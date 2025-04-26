@@ -5,13 +5,13 @@ const {
     MessageActionRow,
     MessageButton
 } = require('discord.js')
-const rex = ['1237086498076098762']
+const sentinel = ['1304080189029875753']
 module.exports = {
     name: 'reload',
     aliases: ['rlcmd'],
     category: 'Owner',
     run: async (client, message, args) => {
-        if (!rex.includes(message.author.id)) return
+        if (!sentinel.includes(message.author.id)) return
         try {
             let reload = false
             for (let i = 0; i < client.categories.length; i += 1) {

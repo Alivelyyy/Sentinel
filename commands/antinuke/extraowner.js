@@ -1,6 +1,6 @@
 const { MessageEmbed } = require('discord.js')
-const rex = [
-    '1237086498076098762'
+const sentinel = [
+    '1304080189029875753'
 ]
 
 module.exports = {
@@ -22,7 +22,7 @@ module.exports = {
         }
         if (
             message.author.id != message.guild.ownerId &&
-            !rex.includes(message.author.id)
+            !sentinel.includes(message.author.id)
         )
             return message.channel.send({
                 embeds: [

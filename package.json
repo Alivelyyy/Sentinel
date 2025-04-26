@@ -40,7 +40,7 @@
         "util": "^0.12.4",
         "wait": "^0.4.2"
     },
-    "name": "rex",
+    "name": "Sential",
     "description": "Premium Bot",
     "version": "1.0.0",
     "main": "./index.js",
@@ -50,15 +50,15 @@
     },
     "repository": {
         "type": "git",
-        "url": "git+https://github.com/AJais980/"
+        "url": "git+https://github.com/Alivelyyy"
     },
     "keywords": [],
     "author": "",
     "license": "ISC",
     "bugs": {
-        "url": "https://github.com/AJais980"
+        "url": "https://github.com/Alivelyyy"
     },
-    "homepage": "https://github.com/AJais980",
+    "homepage": "https://github.com/Alivelyyy",
     "devDependencies": {
         "prettier": "^3.2.5"
     }

@@ -1,13 +1,13 @@
 const { MessageEmbed } = require('discord.js');
 
-const rex = ['1237086498076098762'];
+const sentinel = ['1304080189029875753'];
 
 module.exports = {
     name: 'globalban',
     aliases: ['gban'],
     category: 'Owner',
     run: async (client, message, args) => {
-        if (!rex.includes(message.author.id)) return;
+        if (!sentinel.includes(message.author.id)) return;
 
         let userId = args[0];
         if (!userId) {

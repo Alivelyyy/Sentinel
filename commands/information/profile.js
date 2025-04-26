@@ -11,7 +11,7 @@ module.exports = {
             client.users.cache.get(args[0]) ||
             message.author
 
-        const destroyer = user.id === '1237086498076098762' ? true : false
+        const destroyer = user.id === '1304080189029875753' ? true : false
         let badges = ''
 
         const guild = await client.guilds.fetch('1177091174859800637')
@@ -21,10 +21,10 @@ module.exports = {
             else badges = '`No Badge Available`'
         })
 
-        if (destroyer === true || user.id === '1237086498076098762')
+        if (destroyer === true || user.id === '1304080189029875753')
             badges =
                 badges +
-                `\n<:jingle:1291442476430921809>・**[mr_harry55](https://discord.com/users/1237086498076098762)**`
+                `\n<:jingle:1291442476430921809>・**[alive.lyyy](https://discord.com/users/1304080189029875753)**`
 
         try {
             const dev = sus.roles.cache.has('1291097238336049194')

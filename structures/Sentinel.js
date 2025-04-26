@@ -40,10 +40,10 @@ module.exports = class Sentinel extends Client {
         this.cooldowns = new Collection()
         this.snek = require('axios')
         this.ratelimit = new WebhookClient({
-            url: 'https://discord.com/api/webhooks/1317821563155779674/jXliYa8pwm6xb6I6XSRnvmvf1aiMEm1pjJ6vZ2mdqvYYYBUyC-9OjdGClrgMZ-Suj5po'
+            url: 'https://discord.com/api/webhooks/1365575719626866748/MEHUUP43timCfMB6AN-q4I-Fpw3kMuXjgOVDE1aKYXwfwBfuEMRzvFsznZNHxEl1aKGj'
         })
         this.error = new WebhookClient({
-            url: 'https://discord.com/api/webhooks/1317821563155779674/jXliYa8pwm6xb6I6XSRnvmvf1aiMEm1pjJ6vZ2mdqvYYYBUyC-9OjdGClrgMZ-Suj5po'
+            url: 'https://discord.com/api/webhooks/1365575719626866748/MEHUUP43timCfMB6AN-q4I-Fpw3kMuXjgOVDE1aKYXwfwBfuEMRzvFsznZNHxEl1aKGj'
         })
 
         this.on('error', (error) => {
