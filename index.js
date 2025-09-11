@@ -1,3 +1,16 @@
+const { execSync } = require('child_process')
+const fs = require('fs')
+
+// Auto-install packages
+console.log('📦 Installing packages...')
+try {
+    execSync('npm install', { stdio: 'inherit' })
+    console.log('✅ All packages installed successfully!')
+} catch (error) {
+    console.error('❌ Failed to install packages:', error.message)
+    process.exit(1)
+}
+
 const wait = require('wait')
 require('dotenv').config()
 const path = require('path')
